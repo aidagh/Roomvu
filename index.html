@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Roomvu</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input">
+        <input
+          id="image_url_input"
+          name="image_url_input"
+          placeholder="Enter Image URl"
+        />
+        <button id="image_change_button" onclick="changeUrl()">
+          Change Image
+        </button>
+      </div>
+
+      <div>
+        <div class="image_container">
+          <img
+            src="https://images.unsplash.com/photo-1610878180933-123728745d22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FuYWRhJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80"
+            alt="nature_image"
+            id="image_box"
+            onerror= "errorFunction()"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
